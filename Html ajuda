@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <title>Página de Ajuda</title>
+    <h1>
+      Ajuda
+    </h1>
+    <p>
+      Funcionalidade dos botões: Início, Sobre, Produtos
+    </p>
+    <p>
+      Início: Leva até a pagina Inicio onde tem o nosso slogan e os botões para as outras páginas
+    </p>
+    <p>
+      Sobre: Leva até a pagina sobre, onde fala um poco sobre a nossa empresa e funcionários.
+    </p>
+    <p>
+      Produtos: Leva até a página produtos, onde mostramos nossos produtos em promoções ou descontos.
+    </p>
+    </body>
+</html>
