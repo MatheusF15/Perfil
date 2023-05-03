@@ -1,0 +1,11 @@
+h1 {
+  color: rgb(253, 173, 0);
+  text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: rgb(44, 44, 44);
+  text-align: center;
+  color: rgb(253, 173, 0)
+}
