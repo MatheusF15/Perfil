@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="script.html">
     <title>Minha Página de Destino</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Comentários</a></li>
+                <li><a class="anchor-link" href="#Início">Início</a></li>
+                <li><a class="anchor-link" href="#">Sobre Nós</a></li>
+                <li><a class="anchor-link" href="#">Contato</a></li>
+                <li><a class="anchor-link" href="#Comentários">Comentários</a></li>
             </ul>
         </nav>
     </header>
-
+    <script>
+        document.querySelectorAll('a.anchor-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+        
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth' // Rola suavemente
+                });
+            });
+        });
+        </script>
+   
      <section class="hero">
         <div class="imagem">
-          <img src="https://i.imgur.com/f0raUNa.png" alt="Logo">
+          <img src="/imagens/TDS.png" alt="Logo">
         </div>
+        <div id="Início">
         <h1>Bem-Vindo à Nossa Página</h1>
         <h2>do Curso!</h2>
+        </div>
     </section>
-
     <section class="features">
         <div class="feature">
             <h2>Desenvolvimento de Sistemas</h2>
@@ -42,6 +59,7 @@
     </section>
 
     <section class="testimonials">
+        <div id="Comentários"></div>
         <h2>Depoimentos de Clientes Satisfeitos</h2>
         <div class="testimonial">
             <div class="Comentários">
@@ -82,7 +100,7 @@
     <section class="contato">
         <h2>Entre em Contato Conosco</h2>
         <p>Tire suas dúvidas ou solicite mais informações.</p>
-        <form action="/Landing page comentário/comentário.html" method="get">
+        <form action="http://127.0.0.1:5500/Landing%20page%20coment%C3%A1rio/coment%C3%A1rio.html" method="get">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
             <label for="email">Email:</label>
@@ -94,10 +112,14 @@
     </section>
 
     <div class="Mapa">
-        <h3>Mapa</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14403.873455422834!2d-49.3207054!3d-25.5061016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce33294da5137%3A0x264732ceae89ba60!2sCol%C3%A9gio%20Estadual%20Prof%20Dirce%20Celestino%20do%20Amaral!5e0!3m2!1spt-BR!2sbr!4v1694881973724!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
+      <h3>
+        Sobre nós
+      </h3>
+      <p>
+        
+      </p>
     <footer>
         <p>&copy; 2023 Dirce. Todos os direitos reservados.</p>
     </footer>
